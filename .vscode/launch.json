@@ -22,6 +22,12 @@
             "request": "launch",
             "name": "draft",
             "program": "${workspaceFolder}\\data\\draft.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "newDraft",
+            "program": "${workspaceFolder}\\program\\draft.js"
         }
     ]
 }

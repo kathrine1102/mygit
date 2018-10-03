@@ -9,8 +9,11 @@
 // var http = require('http'); //include a module. 应用程序可以访问HTTP模块，并且能够创建服务器
 // var dt = require('./module'); // './' 用于定位模块，这意味着该模块与Node.js文件位于同一文件夹中
 
+// // var iconv = require('iconv-lite');
+
 // http.createServer(function (req, res) {
 //     res.writeHead(200, {'Content-Type': 'text/html'});
+//     //尝试解决中文乱码问题 , {'encoding': 'binary'}, function(err, data){ if(err) throw error;var str = iconv.decode(data, 'gbk');console.log(str);}
 //     res.write("The date and time are currently: " + dt.myDateTime());
 //     res.end();
 // }).listen(3000);
@@ -30,4 +33,4 @@ http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/html'}); //第一个参数是状态代码，200表示一切正常，第二个参数是包含响应标头的对象
   res.write('Hello World!');
   res.end();
-}).listen(8080);
+}).listen(3000);
