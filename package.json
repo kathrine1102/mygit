@@ -1,7 +1,7 @@
 {
   "name": "develop",
   "version": "1.0.0",
-  "description": "",
+  "description": "Git is a distributed version control system.\r Git is free software.\r Creating a new branch is quick.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,5 +10,14 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kathrine1102/mygit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kathrine1102/mygit/issues"
+  },
+  "homepage": "https://github.com/kathrine1102/mygit#readme"
 }
