@@ -29,8 +29,8 @@ app.get('/', function(req, res) {
     result = [];
     result = findFunc(inputFromWeb);
     if(result != null){
-        // res.send(result);
-        res.send(JSON.stringify(result));
+        // res.send(result.length + result);
+        res.send(result.length + JSON.stringify(result)); //能否换行
     }
     else{
         res.send('error');
