@@ -11,7 +11,7 @@ function findFunc(input) {
             arr1.push(arr[i]);
         }
     }
-    if(arr1 != []){
+    if(arr1.length != 0){
         return arr1;
     }
     else{
