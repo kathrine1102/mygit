@@ -1,0 +1,14 @@
+[
+    {
+        "ticker": "MORN",
+        "name": "Morningstar, Inc."
+    },
+    {
+        "ticker": "AAPL",
+        "name": "Apple Inc."     
+    },
+    {
+        "ticker": "IBM",
+        "name": "International Business Machines Corporation"
+    }
+]
