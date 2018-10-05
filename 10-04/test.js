@@ -32,9 +32,18 @@
 
 
 //Add an HTTP Header
-var http = require('http'); //如果HTTP服务器的响应应该显示为HTML，则应包含具有正确内容类型的HTTP标头：
+// var http = require('http'); //如果HTTP服务器的响应应该显示为HTML，则应包含具有正确内容类型的HTTP标头：
+// http.createServer(function (req, res) {
+//   res.writeHead(200, {'Content-Type': 'text/html'}); //第一个参数是状态代码，200表示一切正常，第二个参数是包含响应标头的对象
+//   res.write('Hello World!');
+//   res.end();
+// }).listen(3000);
+
+
+// Read the Query String
+var http = require('http');
 http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/html'}); //第一个参数是状态代码，200表示一切正常，第二个参数是包含响应标头的对象
-  res.write('Hello World!');
-  res.end();
-}).listen(3000);
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write(req.url);
+    res.end();
+}).listen(8080);
