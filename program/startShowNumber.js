@@ -30,7 +30,7 @@ app.get('/', function(req, res) {
     result = findFunc(inputFromWeb);
     if(result != null){
         // res.send(result.length + result);
-        res.send(result.length + JSON.stringify(result)); //能否换行
+        res.send("The total of your results is: " + result.length + '</br>' + JSON.stringify(result)); //能否换行 //换行成功
     }
     else{
         res.send('error');
@@ -39,4 +39,3 @@ app.get('/', function(req, res) {
 })
 
 app.listen(3000)
-//加入一个t用来监测输出数据的个数
