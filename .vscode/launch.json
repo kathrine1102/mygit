@@ -40,6 +40,12 @@
             "request": "launch",
             "name": "test1",
             "program": "${workspaceFolder}\\10-03\\test1.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "start",
+            "program": "${workspaceFolder}\\program\\start.js"
         }
     ]
 }
