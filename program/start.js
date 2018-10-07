@@ -12,6 +12,7 @@ function findFunc (input) {
         const lowerCaseName = currentRow.name.toLowerCase();
         if( (lowerCaseTicker.indexOf(input.toLowerCase()) != -1) || (lowerCaseName.indexOf(input.toLowerCase())!= -1)){ //无论是符合ticker还是name，都被看作是符合。
             //用indexOf从头到尾检查lowerCaseTicker中是否含有与input.toLowerCase（变成小写后的input）一样的元素
+            //！无法读取未定义属性夫人小写值！
             result.push(currentRow);
         }
     }
