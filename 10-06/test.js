@@ -49,4 +49,13 @@
 // }).listen(3000)
 
 
-//Read Files
+//Read Files，创建一个读取HTML文件的Node.js文件，并返回内容
+var http = require('http');
+var fs = require('fs');
+http.createServer(function (req, res) {
+  fs.readFile('index1.html', function(err, data) {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write(data); //data是什么？
+    res.end();
+  });
+}).listen(3000);
