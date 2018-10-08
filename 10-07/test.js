@@ -13,13 +13,22 @@
 // });
 
 // fs.writeFile()
+// var fs = require('fs');
+
+// fs.writeFile('mynewfile3.txt', 'Hey Sweetie!', function (err) {
+//     if (err) throw err;
+//     console.log('Created!');
+//   });
+// fs.writeFile('mynewfile3.txt', 'Hi Moonpie!', function (err) {
+//   if (err) throw err;
+//   console.log('Replaced!');
+// });
+
+
+// Delete Files
 var fs = require('fs');
 
-fs.writeFile('mynewfile3.txt', 'Hey Sweetie!', function (err) {
-    if (err) throw err;
-    console.log('Created!');
-  });
-fs.writeFile('mynewfile3.txt', 'Hi Moonpie!', function (err) {
+fs.unlink('mynewfile2.txt', function (err) {
   if (err) throw err;
-  console.log('Replaced!');
+  console.log('File deleted!');
 });
