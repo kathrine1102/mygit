@@ -8,3 +8,5 @@
 如果urlString不是字符串将会抛出TypeError。
 
 如果auth属性存在但无法编码则抛出URIError。
+
+parseQueryString, slashesDenoteHost 都只有两个值：true/false
