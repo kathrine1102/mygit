@@ -38,8 +38,8 @@
 	----------------------------------------
 	{ year: '2018', month: '10' }
 
-<h3>var q = url.parse(req.url, true).query;</h3>
-<h3>console.log(url.parse(req.url, true));</h3>
+<h3>var q = url.parse(req.url, false).query;</h3>
+<h3>console.log(url.parse(req.url, false));</h3>
 >code
 	var http = require('http');
 	var url = require('url'); //URL模块可将查询字符串拆分为可读部分
