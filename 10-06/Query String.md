@@ -38,6 +38,8 @@
 	----------------------------------------
 	{ year: '2018', month: '10' }
 
+>网页输出：2018 10
+
 <h3>var q = url.parse(req.url, false).query;</h3>
 <h3>console.log(url.parse(req.url, false));</h3>
 >code
@@ -75,6 +77,8 @@
 	  href: '/?year=2018&month=10' }
 	----------
 	year=2018&month=10
+
+>网页输出：undefined undefined
 
 <h3>便于理解：</h3>
 * true和false的区别在于最后显示在控制台的是一个“对象”还是一个“未解析、未解码的字符串”
